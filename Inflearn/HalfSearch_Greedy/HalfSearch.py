@@ -1,9 +1,17 @@
-n, m = input().split()
+n, m = map(int,input().split())
 count = 0
-numList = input().split()
+numList = list(map(int, input().split()))
 
 numList.sort()
-for i in numList:
-    count += 1
-    if i == m:
-        print(count)
+lt = 0
+rt = n-1
+
+while lt <= rt:
+    mid = (lt+rt)//2
+    if numList[mid] == m:
+        print(mid+1)
+        break
+    elif numList[mid] > m:
+        rt = mid-1
+    else:
+        lt = mid +1
