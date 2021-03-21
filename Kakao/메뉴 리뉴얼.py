@@ -40,7 +40,7 @@ def solution(orders, course):
                     # print(key,biggestNum)
         for key in dict:
             if len(key) == i:
-                if dict[key] == biggestNum:
+                if dict[key] == biggestNum and biggestNum > 1:
                     answer.append(key)
     answer.sort()
     print(answer)
