@@ -18,14 +18,14 @@ def solution(orders, course):
     dict = {}
     for orderItems in orders:
         orderList = list(orderItems)
-        # print(orderList)
+        orderList.sort()
         for i in course:
             dictionKey = list(combinations(orderList, i))
             if dictionKey != []:
                 for j in range(len(dictionKey)):
                     dictionKey[j] = list(dictionKey[j])
                     dictionKey[j] = ''.join(dictionKey[j])
-            # print(dictionKey)
+
             for key in dictionKey:
                 if key in dict:
                     dict[key] =dict[key]+ 1
