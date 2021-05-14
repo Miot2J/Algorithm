@@ -13,3 +13,5 @@ for i in range(len(s)):
             stack.pop()
             cnt += 1
 print(cnt)
+#
+3+3+2+3+2+2+1+1
