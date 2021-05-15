@@ -9,5 +9,5 @@ for x in num:
 if m != 0:
     stack = stack[:-m]
 
-res =''.join(map(str, stack))
+res = ''.join(map(str, stack))
 print(res)
